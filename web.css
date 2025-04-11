@@ -90,9 +90,16 @@ body{
     border: none;
     color: white;
     cursor: pointer;
-    padding: 5px 10px;  /* Optional padding for better spacing */
+    padding: 5px 16px;  /* Optional padding for better spacing */
+    font-size: 23px; /* Font size for the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+    border-right: 2px solid white !important;
+    border-radius: 0;
+    line-height: 0.1;
+    height: 30px;
+    align-items: center;
+    
 }
-
 .icons button:focus {
     outline: none; 
 }
@@ -103,6 +110,10 @@ body{
     border-right: none; 
 }
 
+.icons .btn:nth-child(3) {
+
+  border-right: none; 
+}
 
 
 
@@ -131,8 +142,13 @@ body{
   #sync2 .item h1 {
     font-size: 12px;
     border-right: 2px solid #ffdb00;
+    padding-right: 11px;
   
   }
+
+  #sync2 .item:nth-child(6){
+    border-right: none;
+  } 
   
 
   .owl-theme .owl-nav [class*='owl-'] {
